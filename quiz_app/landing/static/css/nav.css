@@ -24,10 +24,10 @@
 
 .nav-button {
     background-color: var(--background);
-    width: 85%;
-    margin: 3vh auto;
+    width: 90%;
+    margin: 2vh auto;
     text-align: center;
-    padding: 7% 1%;
+    padding: 10% 2%;
     font-size: 20px;
     font-weight: 700;
     border-radius: 5px;

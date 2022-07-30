@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:400&subset=latin,latin-ext);
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --background: #0E2A47;
+    --nav-base: #000A12;
+    --highlight: #48FFD5;
+    --text: #fff;
+
+    --background-hover: #1b3858;
+    --nav-base-hover: #031524;
+    --highlight-hover: #55ebc8;
+    --text-hover: #ccc;
+}
+
+body {
+    font-family: 'Inter';
+    background-color: var(--background);
+    color: var(--text);
+}
+
+#center {
+    margin-left: calc(12.5vw + 7.5%);
+    width: 70vw;
+}
+
+#title {
+    padding-top: 5vh;
+    font-size: 12vh;
+    color: var(--highlight);
+}
+
+#title-desc {
+    width: 75%;
+    margin-top: 0.75vh;
+    font-size: 25px;
+}
