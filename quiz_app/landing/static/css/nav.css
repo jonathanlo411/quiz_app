@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:400&subset=latin,latin-ext);
+
+:root {
+    --background: #0E2A47;
+    --nav-base: #000A12;
+    --highlight: #48FFD5;
+    --text: #fff;
+
+    --background-hover: #1b3858;
+    --nav-base-hover: #031524;
+    --highlight-hover: #55ebc8;
+    --text-hover: #ccc;
+}
+
+#nav-base {
+    float: left;
+    font-family: 'Inter';
+    color: var(--text);
+    width: 12.5vw;
+    height: 100vh;
+    background-color: var(--nav-base);
+    padding-top: 3vh;
+}
+
+.nav-button {
+    background-color: var(--background);
+    width: 85%;
+    margin: 3vh auto;
+    text-align: center;
+    padding: 7% 1%;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.25s;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    background-color: var(--background-hover);
+}
+
+#mm-cc {
+    text-align: center;
+    position: fixed;
+    bottom: 1.5vh;
+    left: 3.5vw;
+    font-size: 15px;
+}

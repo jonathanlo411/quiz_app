@@ -5,9 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../static/css/landing.css">
-    <title>Landing</title>
+    <title>Media Mine</title>
 </head>
 <body>
-    This is landing
+    {% include "landing/nav.html" %}
+
+    <div id="center">
+        <h1 id="title">Media Mine</h1>
+        <p id="title-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus expedita, nesciunt asperiores enim aut quos modi ipsum laudantium cumque praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, tempore.
+        </p>
+        <h3 id="sug-title">Top Suggestions</h2>
+        <div id="sug">
+
+            <div class="sug-entry">
+                <img src="https://m.media-amazon.com/images/M/MV5BNDM4MWE3NGQtODlkYS00NWU5LTg3ZjMtMTEyNjljOWI4NWIxXkEyXkFqcGdeQXVyNzkzODk2Mzc@._V1_.jpg">
+                <h4 class="sug-title">I Want to eat your Pancreas (2018)</h4>
+                <p class="sug-desc">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae tempore illum minima, voluptates reprehenderit officiis itaque? Adipisci fugit magni consectetur optio, doloribus eligendi obcaecati atque!
+                </p>
+            </div>
+            <div class="sug-entry">
+                <img src="https://lh3.googleusercontent.com/raHjYvPiJSqZwofumtvDbGMasJBckmY4dme2XsW1fRPJysCxT1LTTo81NiLgDK5itT0H-50Kn1HIS5Q=w544-h544-l90-rj">
+                <h4 class="sug-title">Bluish Light (2022)</h4>
+                <p class="sug-desc">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae tempore illum minima, voluptates reprehenderit officiis itaque? Adipisci fugit magni consectetur optio, doloribus eligendi obcaecati atque!
+                </p>
+            </div>
+            <div class="sug-entry">
+                <img src="https://kbimages1-a.akamaihd.net/5f2a2246-56f6-4a49-950b-039f2d595e25/1200/1200/False/three-days-of-happiness.jpg">
+                <h4 class="sug-title">Three Days of Happiness (2013)</h4>
+                <p class="sug-desc">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae tempore illum minima, voluptates reprehenderit officiis itaque? Adipisci fugit magni consectetur optio, doloribus eligendi obcaecati atque!
+                </p>
+            </div>
+
+        </div>
+    </div>
+
 </body>
 </html>

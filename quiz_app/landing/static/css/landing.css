@@ -1,10 +1,91 @@
-
-
+@import url(https://fonts.googleapis.com/css?family=Inter:400&subset=latin,latin-ext);
 * {
     box-sizing: border-box;
     margin: 0;
 }
 
-body {
-    font-family: 'Raleway';
+:root {
+    --background: #0E2A47;
+    --nav-base: #000A12;
+    --highlight: #48FFD5;
+    --text: #fff;
+
+    --background-hover: #1b3858;
+    --nav-base-hover: #031524;
+    --highlight-hover: #55ebc8;
+    --text-hover: #ccc;
 }
+
+body {
+    font-family: 'Inter';
+    background-color: var(--background);
+    color: var(--text);
+}
+
+#center {
+    margin-left: calc(12.5vw + 7.5%);
+    width: 70vw;
+}
+
+#title {
+    padding-top: 5vh;
+    font-size: 12vh;
+    color: var(--highlight);
+}
+
+#title-desc {
+    width: 75%;
+    margin-top: 1vh;
+    font-size: 25px;
+}
+
+#sug-title {
+    color: var(--highlight);
+    font-size: 5vh;
+    margin-top: 5vh;
+}
+
+#sug {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: row;
+    text-align: left;
+}
+
+#sug .sug-entry {
+    flex: 1;
+    max-width: 25%;
+    transition: 0.3s;
+    padding: 1%;
+    border: 1px solid var(--background);
+    border-radius: 15px;
+}
+
+#sug .sug-entry img {
+    height: 38vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sug-title {
+    margin-top: 2vh;
+    font-size: 25px;
+}
+
+.sug-desc {
+    margin-top: 0.75vh;
+    font-size: 17px;
+}
+
+/* Sug Entry Hover effects */
+#sug .sug-entry:hover {
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(187, 187, 187, 0.22) 0px 15px 12px;
+    border: 1px solid rgb(180, 180, 180);
+}
+
+/* #sug .sug-entry img:hover {
+    object-fit: contain;
+} */
