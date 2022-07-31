@@ -10,6 +10,7 @@
     <title>Media Mine</title>
 </head>
 <body>
+    {% load static %}
     {% include "landing/nav.html" %}
 
     <div id="center">
@@ -20,41 +21,19 @@
 
         <div id="quiz_select">
 
+            {% for entry in data %}
             <div class="quiz_entry">
-                <img src="https://wallpaperaccess.com/full/4240393.jpg">
+                <img src="media/{{ entry.image_filepath }}">
                 <div class="quiz_info">
-                    <h3 class="quiz_title">Quick Picks</h3>
+                    <h3 class="quiz_title">{{ entry.title }}</h3>
                     <p class="quiz_desc">
-                        Short and simple quit to get immediate suggestions.
+                        {{ entry.description }}
                     </p>
-                    <h6 class="quiz_duration">5 min</h6>
+                    <h6 class="quiz_duration">{{ entry.duration }} min</h6>
                     <button class="quiz_start">Start Quiz</button>
                 </div>
             </div>
-
-            <div class="quiz_entry">
-                <img src="https://wallpaperaccess.com/full/4240393.jpg">
-                <div class="quiz_info">
-                    <h3 class="quiz_title">Quick Picks</h3>
-                    <p class="quiz_desc">
-                        Short and simple quit to get immediate suggestions.
-                    </p>
-                    <h6 class="quiz_duration">5 min</h6>
-                    <button class="quiz_start">Start Quiz</button>
-                </div>
-            </div>
-
-            <div class="quiz_entry">
-                <img src="https://wallpaperaccess.com/full/4240393.jpg">
-                <div class="quiz_info">
-                    <h3 class="quiz_title">Quick Picks</h3>
-                    <p class="quiz_desc">
-                        Short and simple quit to get immediate suggestions.
-                    </p>
-                    <h6 class="quiz_duration">5 min</h6>
-                    <button class="quiz_start">Start Quiz</button>
-                </div>
-            </div>
+            {% endfor %}
 
             <span id="quiz-spacer">.</span>
         </div>

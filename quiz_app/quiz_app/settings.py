@@ -11,6 +11,12 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import os
+import json
+
+with open("quiz_app/secret.json", "r") as file:
+    keys = json.load(file)
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-be$a%7h(r!wxo++5i4j=4#i*q8nmsw%h=&x26oici31l2(9#=0'
+SECRET_KEY = keys['django_secret_key']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'landing',
-    'quiz_select'
+    'quiz_select',
+    'quiz_picks'
 ]
 
 MIDDLEWARE = [
@@ -77,8 +84,13 @@ WSGI_APPLICATION = 'quiz_app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'quizApp',
+        'USER': 'root',
+        'PASSWORD': keys['mySQL_password'],
+        'HOST': '127.0.0.1',
+        'PORT':'3306',
+
     }
 }
 
@@ -123,3 +135,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Enabling static files
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
+MEDIA_ROOT  = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = 'media/'

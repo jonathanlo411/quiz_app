@@ -1,12 +1,27 @@
+# Django imports
 from django.shortcuts import render
 
-# Create your views here.
+# Models
+from .models import Quiz
 
+# Renders
 def movies_render(request):
-    return render(request, 'quiz_select/movies.html')
+    data = Quiz.objects.all().filter(quiz_type='movie')
+    context = {
+        "data": data
+    }
+    return render(request, 'quiz_select/movies.html', context)
 
 def music_render(request):
-    return render(request, "quiz_select/music.html")
+    data = Quiz.objects.all().filter(quiz_type='music')
+    context = {
+        "data": data
+    }
+    return render(request, "quiz_select/music.html", context)
 
 def books_render(request):
-    return render(request, 'quiz_select/books.html')
+    data = Quiz.objects.all().filter(quiz_type='books')
+    context = {
+        "data": data
+    }
+    return render(request, 'quiz_select/books.html', context)

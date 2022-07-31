@@ -13,6 +13,7 @@
 }
 
 #nav-base {
+    position: relative;
     float: left;
     font-family: 'Inter';
     color: var(--text);
@@ -42,7 +43,7 @@
 
 #mm-cc {
     text-align: center;
-    position: fixed;
+    position: absolute;
     bottom: 3vh;
     left: 3.3vw;
     font-size: 17px;
