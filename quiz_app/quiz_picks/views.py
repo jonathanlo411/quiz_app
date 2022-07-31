@@ -19,7 +19,7 @@ def picks_render(request):
         if not get_r:
             return HttpResponseForbidden("POST requests are forbidden.")
         elif not 'quiz_id' in request.GET:
-            return HttpResponseNotFound("Quiz ID not specified")
+            return HttpResponseNotFound("Quiz ID not specified.")
         else:
             context = {
                 "error": "Something went wrong..."
