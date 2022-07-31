@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    {% include "landing/favicon.html" %}
+    <link rel="stylesheet" href="./../static/css/account_base.css">
+    <title>Media Mine</title>
 </head>
 <body>
-    
+    {% include "landing/nav.html" %}
+
+    <div id="center">
+        <div class="signup-block">
+            <h1 class="title">Media Mine</h1>
+            <h4 class="desc">Sign Up!</h4>
+            <h4 class="error">
+                {% if error %}
+                {{ error }}
+                {% else %}
+                {% endif %}
+            </h4>
+            <form class="inputs" method="POST" action="/signup">
+                {% csrf_token %}
+                {{ ucreation }}
+                <button class="su-bt" type="submit">Log In</button>
+                <a class="hAccount" href="/login">Have an Account? Log Up</a>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

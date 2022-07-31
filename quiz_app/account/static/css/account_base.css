@@ -23,3 +23,95 @@ body {
     overflow: hidden;
 }
 
+#center {
+    margin-left: 12.5vw;
+    padding-top: 30vh;
+}
+
+.signup-block {
+    margin: 0 auto;
+    background-color: var(--nav-base);
+    border: 1px solid var(--text);
+    border-radius: 15px;
+    width: 30vw;
+    padding-bottom: 3vh;
+}
+
+/* Inside login-block (.login-block) */
+.title {
+    color: var(--highlight);
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.desc {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.inputs {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.inputs .su-field {
+    border: 0;
+    outline: 0;
+    background-color: #c5c6c7;
+    padding: 3% 6%;
+    border-radius: 3px;
+    color: black;
+    font-size: 16px;
+    display: block;
+    margin: 6% auto;
+    width: 100%;
+    transition: 0.15s;
+}
+
+.inputs .su-field:focus {
+    background-color: white;
+}
+
+.inputs .su-bt {
+    display: block;
+    border: 0;
+    outline: 0;
+    background-color: #45A29E;
+    color: white;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 3% 6%;
+    transition: 0.35s;
+    width: 100%;
+    margin: 6% auto;
+}
+
+.inputs .su-bt:hover {
+    background-color: #66FCF1;
+    cursor: pointer;
+}
+
+.inputs .hAccount, .hAccount:visited {
+    color: #45A29E;
+    font-size: 16px;
+    transition: 0.35s;
+    text-decoration: none;
+}
+
+.inputs .hAccount:hover {
+    color: white;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+}
