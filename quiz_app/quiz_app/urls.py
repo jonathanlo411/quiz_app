@@ -8,7 +8,7 @@ from django.conf.urls.static import static
 from landing.views import landing_render
 from quiz_select.views import movies_render, music_render, books_render
 from quiz_picks.views import picks_render
-from account.views import login_render, signup_render, admin_render, logout_render
+from account.views import login_render, signup_render, admin_render, logout_render, delete_all_events
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -20,7 +20,8 @@ urlpatterns = [
     path('login', login_render, name='login'),
     path('signup', signup_render, name='signup'),
     path('adminaccount', admin_render, name='admin'),
-    path('logout_action', logout_render, name='logout')
+    path('logout_action', logout_render, name='logout'),
+    path('delete_all_events', delete_all_events, name='delete_all_events')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 

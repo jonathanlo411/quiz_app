@@ -15,6 +15,7 @@
         
         <div id="form-block">
             <form action="/adminaccount" method="POST">
+                {% csrf_token %}
                 {{ event_form }}
                 <button type="submit">Submit</button>
             </form>

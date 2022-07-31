@@ -69,7 +69,7 @@ def admin_render(request):
     if request.method == 'POST':
         event = Quiz(
             title = request.POST['title'],
-            description = request.POST['desciption'],
+            description = request.POST['description'],
             duration = request.POST['duration'],
             image_filepath = request.POST['image_filepath'],
             quiz_type = request.POST['quiz_type']
@@ -77,4 +77,8 @@ def admin_render(request):
         event.save()
     return render(request, "account/admin.html", {"event_form": MediaForm})
 
+@login_required(login_url='/login')
+def delete_all_events(request):
+    Quiz.objects.all().delete()
+    return render(request, 'landing/landing.html')
 
