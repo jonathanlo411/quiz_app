@@ -32,14 +32,14 @@ body {
 
 #title {
     padding-top: 5vh;
-    font-size: 12vh;
+    font-size: 10vh;
     color: var(--highlight);
 }
 
 #title-desc {
     width: 75%;
     margin-top: 0.75vh;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 /* Quiz Entry */
@@ -47,7 +47,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 3vh;
-    height: 75vh;
+    height: 80vh;
     overflow: auto;
     width: 95%;
 }

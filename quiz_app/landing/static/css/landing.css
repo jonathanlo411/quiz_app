@@ -29,12 +29,12 @@ body {
 
 #title {
     padding-top: 5vh;
-    font-size: 12vh;
+    font-size: 10vh;
     color: var(--highlight);
 }
 
 #title-desc {
-    width: 75%;
+    width: 60%;
     margin-top: 0.75vh;
     font-size: 25px;
 }
@@ -63,7 +63,7 @@ body {
 }
 
 #sug .sug-entry img {
-    height: 38vh;
+    height: 43vh;
     width: 100%;
     object-fit: cover;
     border-radius: 6px;
@@ -71,7 +71,14 @@ body {
 
 .sug-title {
     margin-top: 2vh;
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.sug-det {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 2vh;
 }
 
 .sug-desc {
