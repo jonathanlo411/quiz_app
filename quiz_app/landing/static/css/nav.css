@@ -22,13 +22,13 @@
     background-color: var(--nav-base);
     padding-top: 3vh;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    text-align: center;
 }
 
 .nav-button {
     background-color: var(--background);
     width: 87%;
     margin: 2vh auto;
-    text-align: center;
     padding: 9% 1.75%;
     font-size: 25px;
     font-weight: 700;

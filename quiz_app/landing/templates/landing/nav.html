@@ -1,8 +1,9 @@
 <link rel="stylesheet" href="./../static/css/nav.css">
-
+{% load static %}
 <!-- Nav Start -->
 
 <div id="nav-base">
+    <img src="{% static 'logo.png' %}">
     <div class="nav-button" onclick="location.href='/'">Home</div>
     <div class="nav-button" onclick="location.href='/movies'">Movies</div>
     <div class="nav-button" onclick="location.href='/music'">Music</div>
