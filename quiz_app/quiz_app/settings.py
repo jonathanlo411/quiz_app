@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'landing',
     'quiz_select',
-    'quiz_picks'
+    'quiz_picks',
+    'account'
 ]
 
 MIDDLEWARE = [

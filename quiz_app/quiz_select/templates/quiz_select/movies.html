@@ -30,7 +30,7 @@
                         {{ entry.description }}
                     </p>
                     <h6 class="quiz_duration">{{ entry.duration }} min</h6>
-                    <button class="quiz_start">Start Quiz</button>
+                    <button class="quiz_start" onclick="location.href='/picks?quiz_id={{ entry.id }}'">Start Quiz</button>
                 </div>
             </div>
             {% endfor %}
