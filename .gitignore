@@ -4,3 +4,9 @@ myenv
 
 # Secrets
 secret.json
+
+# Local DB bench
+db.sqlite3
+
+# Pycache
+__pycache__
