@@ -63,7 +63,7 @@ body {
 }
 
 #sug .sug-entry img {
-    height: 43vh;
+    height: 40vh;
     width: 100%;
     object-fit: cover;
     border-radius: 6px;
