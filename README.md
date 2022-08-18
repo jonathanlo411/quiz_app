@@ -8,4 +8,4 @@ The backend is in Django and the frontend is HTML/CSS and JS as of now.
 - ML Algo Recommender System
 - Spotify API to include 8 tracked features (Valence, Dancibility, etc.)
 - Theme Changes (Dark Mode, Light Mode, Mixed, etc.)
-- User Account (Login and personalized recs)
+- Personalized recs
